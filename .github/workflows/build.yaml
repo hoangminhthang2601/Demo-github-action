@@ -1,10 +1,10 @@
 name: flask-helloworld
-on: 
-  push:
-    branches: [master]
-jobs: 
-  docker:
-    runs-on: ubuntu-latest
-    steps:
-     -name: Checkout
-      uses: actions/checkout@v2
+on:
+    push:
+        branches: [master]
+jobs:
+    docker:
+        runs-on: ubuntu-latest
+        steps: # Add two spaces here
+            - name: Checkout
+              uses: actions/checkout@v2
